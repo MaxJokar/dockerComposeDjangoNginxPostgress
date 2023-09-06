@@ -57,7 +57,13 @@ http://localhost:8001/
 in Docker , terminal , django_cont : python manage.py migrate 
 
 
-
+* we also can create a project this way(without project or venv etc)
+1. create dockefile
+2.create docker-compose
+3.$docker compose build
+4.$docker compose run --rm app sh -c "django-admin startproject app ."
+4.$docker compose run --rm app sh -c "python manage.py startapp core "
+4.$docker compose run --rm app sh -c "python manage.py makemigrations "
 
 
 

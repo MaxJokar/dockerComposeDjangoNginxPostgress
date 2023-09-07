@@ -12,8 +12,19 @@ Run the containers : docker compose up
 
 Close the containers : docker compose down
 
+# to make image from Dockerfile:
+PS C:\mydrive\DjangoProjects2023\dockerComposeDjangoNginxPostgress> docker compose build
+PS C:\mydrive\DjangoProjects2023\dockerComposeDjangoNginxPostgress> docker compose up 
 
-django ==> venv
+
+
+data==>postgres\db 
+django==>core(project),static(css,fonts,img,js),venv,dockerignore ,.env,Dockerfile,manage.py,requ.txt
+nginx(Dockerfile,default.conf)
+.gitignore
+docker-compose.yml
+readme.md 
+
 
 
 
